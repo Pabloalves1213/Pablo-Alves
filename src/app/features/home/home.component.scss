@@ -1,0 +1,23 @@
+.pagina {
+  max-width: 1200px;
+
+  margin: 0 auto;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+p {
+  color: var(--cinza);
+}
+
+.card {
+  margin-top: 30px;
+
+  padding: 25px;
+
+  background-color: var(--azul-escuro);
+
+  border-radius: 8px;
+}

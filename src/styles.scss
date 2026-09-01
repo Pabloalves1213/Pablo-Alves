@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+/* Cores principais do sistema */
+
+:root {
+  --azul-marinho: #0b1f3a;
+  --azul-escuro: #07152a;
+  --azul-claro: #2563eb;
+
+  --branco: #ffffff;
+  --cinza: #cbd5e1;
+}
+
+/* Reset básico */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 100;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  background-color: var(--azul-marinho);
+
+  color: var(--branco);
+}

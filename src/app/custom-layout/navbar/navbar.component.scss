@@ -1,0 +1,41 @@
+.navbar {
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0 30px;
+    background-color: var(--azul-escuro);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    position: absolute;
+    left: 200px;
+    color: var(--branco);
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: var(--branco);
+
+    text-decoration: none;
+
+    padding: 8px 12px;
+
+    border-radius: 15px;
+}
+
+.menu a:hover {
+    background-color: var(--azul-marinho);
+}
+
+.menu a.ativo {
+    background-color: var(--azul-claro);
+}
