@@ -1,23 +1,180 @@
-.pagina {
-  max-width: 1200px;
-
+.home {
+  min-height: calc(89vh - 65px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1400px;
   margin: 0 auto;
+  padding: 40px;
 }
 
-h1 {
+.home-content {
+  max-width: 600px;
+}
+
+.saudacao {
+  color: var(--azul-claro);
+  font-size: 18px;
   margin-bottom: 10px;
 }
 
-p {
-  color: var(--cinza);
+h1 {
+  color: var(--branco);
+  font-size: 55px;
+  margin-bottom: 5px;
 }
 
-.card {
-  margin-top: 30px;
+h2 {
+  color: var(--branco);
+  font-size: 30px;
+  margin-bottom: 20px;
+}
 
-  padding: 25px;
+h2 span {
+  color: var(--azul-claro);
+}
 
-  background-color: var(--azul-escuro);
+.descricao {
+  max-width: 500px;
+  color: var(--cinza);
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
 
-  border-radius: 8px;
+.botoes {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.botao {
+  padding: 10px 20px;
+  border: 1px solid var(--azul-claro);
+  border-radius: 20px;
+  color: var(--branco);
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.botao:hover {
+  background-color: var(--azul-claro);
+}
+
+.botao.principal {
+  background-color: var(--azul-claro);
+}
+
+.botao.principal:hover {
+  background-color: transparent;
+}
+
+.redes {
+  display: flex;
+
+  gap: 20px;
+}
+
+.redes a {
+  color: var(--cinza);
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  transition: 0.3s;
+}
+
+.redes a:hover {
+  color: var(--azul-claro);
+}
+
+.foto-container {
+  position: relative;
+  width: 350px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foto-forma {
+  position: absolute;
+  bottom: 20px;
+  width: 320px;
+  height: 330px;
+  background-color: #55c8df;
+  clip-path: polygon(50% 0%,
+      92% 25%,
+      92% 65%,
+      50% 100%,
+      8% 65%,
+      8% 25%);
+
+  box-shadow: 0 20px 30px rgba(70, 200, 230, 0.4);
+}
+
+.foto {
+  position: relative;
+  width: 380px;
+  height: 500px;
+  object-fit: cover;
+  object-position: center 35%;
+  border-radius: 25px;
+  z-index: 2;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+
+  .home {
+    flex-direction: column;
+
+    text-align: center;
+
+    padding: 30px 20px;
+  }
+
+  .home-content {
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .descricao {
+    margin: 0 auto 25px;
+  }
+
+  .botoes {
+    justify-content: center;
+  }
+
+  .redes {
+    justify-content: center;
+  }
+
+  .foto-container {
+    margin-top: 40px;
+
+    width: 300px;
+    height: 350px;
+  }
+
+  .foto-forma {
+    width: 280px;
+    height: 290px;
+  }
+
+  .foto {
+    width: 270px;
+    height: 340px;
+  }
 }
